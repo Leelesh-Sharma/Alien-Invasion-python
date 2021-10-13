@@ -13,15 +13,15 @@ def check_events(ship):
                     ship.moving_right = True
                 elif event.key == pygame.K_LEFT:
                     ship.moving_left = True
-                    
+
             elif event.type == pygame.KEYUP:
                 if event.key == pygame.K_RIGHT:
                     ship.moving_right = False
                 elif event.key == pygame.K_LEFT:
                     ship.moving_left = False
-def update_screen(ai_seetings,screen,ship):
+def update_screen(ai_setings,screen,ship):
     
-    screen.fill(ai_seetings.bg_color)
+    screen.fill(ai_setings.bg_color)
     
     ship.blitme()
 
