@@ -5,6 +5,7 @@ from pygame.sprite import Group
 from settings import Settings
 from ship import Ship
 import game_functions as gf
+from alien import Alien
 
 def run_game():
     pygame.init()
@@ -13,7 +14,9 @@ def run_game():
     pygame.display.set_caption("Alien Invasion - Leelesh")
     
     ship = Ship(screen, ai_settings)
-    
+
+    alien = Alien(ai_settings, screen)
+
     bullets = Group()
 
     while True:
@@ -22,9 +25,8 @@ def run_game():
         
         ship.update()
         
-        bullets.update()
+        gf.update_bullet(bullets)
 
-        # gf.update_screen(ai_settings,screen,ship,bullets) /
-        gf.update_screen(ai_settings, screen, ship, bullets)
+        gf.update_screen(ai_settings, screen, ship, alien, bullets)
 
 run_game()
