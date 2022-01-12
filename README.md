@@ -15,11 +15,11 @@ destroys the aliens. If the player shoots all the aliens, a new fleet appears th
 
 # Controls
 
--Space-bar
+- Space-bar
  - Shoot
 
--Arrow Keys (Left - Right)
- -Move the ship left and right
+- Arrow Keys (Left - Right)
+ - Move the ship left and right
 
 # Running
 
