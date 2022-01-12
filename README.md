@@ -16,10 +16,10 @@ destroys the aliens. If the player shoots all the aliens, a new fleet appears th
 # Controls
 
 - Space-bar
- -Shoot
+  - Shoot
 
 - Arrow Keys (Left - Right)
- -Move the ship left and right
+  - Move the ship left and right
 
 # Running
 
